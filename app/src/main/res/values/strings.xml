@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Trivia</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="play_game">Play Game</string>
+    <string name="submit">Submit</string>
+    <string name="play_again">Play Again</string>
+    <string name="you_win_image">You Win Image</string>
+    <string name="game_over">Game Over</string>
+    <string name="try_again">Try Again</string>
+    <string name="about_text">This app is developed to understand Android jetpack Navigation, Intent , sharing and other concepts.</string>
+    <string name="about">About</string>
+    <string name="android_trivia">Android Trivia</string>
+</resources>
