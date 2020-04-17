@@ -51,7 +51,7 @@ class GameFragment : Fragment() {
     lateinit var currentQuestion: Question
     lateinit var answers: MutableList<String>
     private var questionIndex = 0
-    private val numOfQuestions = Math.min((questions.size + 1)/2,3)
+    private val numOfQuestions = ((questions.size + 1) / 2).coerceAtMost(3)
 
 
     override fun onCreateView(
@@ -91,13 +91,16 @@ class GameFragment : Fragment() {
                     }
                     else {
 
-                    //view?.findNavController()?.navigate()
+
+                        //Use of SafeArgs
+                       view?.findNavController()?.navigate(GameFragmentDirections.actionGameFragmentToGameWonFragment(numOfQuestions,questionIndex))
+
 
                     }
 
 
                 } else{
-                       view?.findNavController()?.navigate(R.id.action_gameFragment_to_gameOverFragment)
+                       view?.findNavController()?.navigate(GameFragmentDirections.actionGameFragmentToGameOverFragment())
                 }
 
 
